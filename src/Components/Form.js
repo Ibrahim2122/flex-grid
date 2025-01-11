@@ -1,12 +1,13 @@
 import React from 'react'
 import Block from './Block'
 import  "./Form.css"
+import logo from "../imgs/flex-grid-logo.svg";
 
 function Form(props) {
   return (
     <Block >
           <div className='input-container'>
-              <p>Logo</p>
+              <img src={logo} alt='logo'/>
               <h1>Coming Soon</h1>
               <h2>Find the Perfect Storage Solution with FlexGrid</h2>
               <h6>Simplifying Storage, One Step at a Time</h6>

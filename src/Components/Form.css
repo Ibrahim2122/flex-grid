@@ -5,20 +5,25 @@
     min-width: 100%;
 }
 
+img {
+    width: 55%;
+    margin: 10px;
+}
+
 h1 {
-    color: #1e3a8a;
+    color: azure;
     font-size: 2.5rem;
     margin: 0;
 }
 
 h2 {
-    color: #f97316;
+    color: #ff8000;
     font-size: 1.8rem;
     font-weight: 600;
 }
 
 h6 {
-    color: #405ed9;
+    color: azure;
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 0 30px 0;
@@ -52,7 +57,7 @@ h6 {
 
 .input input:focus {
     outline: none;
-    border-color: #f97316;
+    border-color: #ff8000;
     box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
     z-index: 10;
 }
@@ -71,7 +76,7 @@ h6 {
     font-weight: 500;
     line-height: 1.25rem;
     color: #ffffff;
-    background-color: #ea580c;
+    background-color: #ff8000;
     transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -90,6 +95,6 @@ h6 {
 } 
 
 p {
-    color: #405ed9;
+    color: azure;
     margin-top: 30px;
 }
