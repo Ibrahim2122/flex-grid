@@ -1,23 +1,26 @@
-import React from 'react'
-import Block from './Block'
-import  "./Form.css"
+import React, { useState } from 'react'
+import "./Form.css"
 import logo from "../imgs/flex-grid-logo.svg";
 
 function Form(props) {
+
+  const [name, setName] = useState("")
+
+  const handleform = e => {
+    e.preventDefault();
+    alert("Thanks for your interest in us, " + name);
+    setName("");
+  }
+
   return (
-    <Block >
-          <div className='input-container'>
-              <img src={logo} alt='logo'/>
-              <h1>Coming Soon</h1>
-              <h2>Find the Perfect Storage Solution with FlexGrid</h2>
-              <h6>Simplifying Storage, One Step at a Time</h6>
-              <div className='input'>
-                  <input placeholder='Enter your email'/>
-                  <button>Stay Updated</button>
-              </div>
-              <p>At FlexGrid, we make logistics and inventory simple to make everyday life easier for everyone.</p>
-        </div>
-    </Block>
+
+      <form className='input-container' onSubmit={handleform}>
+        <img src={logo} alt='logo' />
+        <h2>Optimizing Storage Solutions 📦 <br/>Coming Soon!</h2>
+
+        <p>At FlexGrid, we make logistics and inventory simple to make everyday life easier for everyone.</p>
+      </form>
+
   )
 }
 
