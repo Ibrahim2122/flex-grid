@@ -18,7 +18,7 @@ function Form(props) {
         <img src={logo} alt='logo' />
         <h2>Optimizing Storage Solutions 📦 <br/>Coming Soon!</h2>
 
-        <p>At FlexGrid, we make logistics and inventory simple to make everyday life easier for everyone.</p>
+        <p>At Flexgrid, we make logistics and inventory simple to make everyday life easier for everyone.</p>
       </form>
 
   )
